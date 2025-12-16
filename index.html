@@ -3,46 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page Tailwind</title>
+  <title>Portofolio Gue</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-800">
 
   <!-- HERO -->
-  <section class="text-center py-20 bg-blue-600 text-white">
-    <h1 class="text-5xl font-bold mb-4">Selamat Datang di Web Gue!</h1>
-    <p class="text-lg mb-6">Landing page pertama gue versi Tailwind, lebih modern dan siap dijual!</p>
-    <a href="#fitur" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-200">
-      Lihat Fitur
+  <section class="py-20 text-center bg-white">
+    <img src="https://via.placeholder.com/150" class="w-32 h-32 rounded-full mx-auto mb-6 shadow" />
+    <h1 class="text-4xl font-bold mb-2">Nama Lo</h1>
+    <p class="text-lg text-gray-600 mb-4">Web Developer • UI Designer • Digital Creator</p>
+    <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-blue-700">
+      Lihat Project
     </a>
   </section>
 
-  <!-- FITUR -->
-  <section id="fitur" class="py-16 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10">Kenapa Harus Pilih Ini?</h2>
+  <!-- ABOUT -->
+  <section class="max-w-3xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold mb-4 text-center">Tentang Gue</h2>
+    <p class="text-lg text-gray-700 text-center">
+      Gue adalah developer yang fokus bikin landing page modern, cepat, dan siap jual.
+      Suka ngulik desain, bikin website responsif, dan bantu orang lain masuk dunia digital.
+    </p>
+  </section>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Cepat</h3>
-        <p>Landing page ringan dan loading super cepat.</p>
+  <!-- SKILLS -->
+  <section class="bg-white py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">Skill Utama</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto px-6">
+      <div class="p-6 bg-gray-100 rounded-xl shadow text-center">
+        <h3 class="text-xl font-semibold mb-2">HTML & CSS</h3>
+        <p>Bangun struktur dan styling website dari nol.</p>
       </div>
-
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Modern</h3>
-        <p>Desain clean dan responsif otomatis.</p>
+      <div class="p-6 bg-gray-100 rounded-xl shadow text-center">
+        <h3 class="text-xl font-semibold mb-2">Tailwind CSS</h3>
+        <p>Bikin UI modern dengan cepat dan rapi.</p>
       </div>
-
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="text-xl font-semibold mb-2">Siap Jual</h3>
-        <p>Bisa langsung lo upload ke marketplace.</p>
+      <div class="p-6 bg-gray-100 rounded-xl shadow text-center">
+        <h3 class="text-xl font-semibold mb-2">Landing Page</h3>
+        <p>Optimasi tampilan buat jualan & portfolio.</p>
       </div>
     </div>
   </section>
 
+  <!-- PROJECTS -->
+  <section id="projects" class="py-16 max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Project Terbaru</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-4 rounded-xl shadow">
+        <div class="h-40 bg-gray-200 rounded mb-4"></div>
+        <h3 class="text-xl font-semibold mb-2">Landing Page 1</h3>
+        <p class="text-gray-600">Landing page modern untuk jualan digital.</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow">
+        <div class="h-40 bg-gray-200 rounded mb-4"></div>
+        <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+        <p class="text-gray-600">Website personal untuk branding profesional.</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow">
+        <div class="h-40 bg-gray-200 rounded mb-4"></div>
+        <h3 class="text-xl font-semibold mb-2">PKM Digital</h3>
+        <p class="text-gray-600">Website edukasi digital literacy & anti-hoaks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-16 bg-blue-600 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Hubungi Gue</h2>
+    <p class="mb-6">Siap bantu bikin website keren buat kebutuhan lo.</p>
+    <a href="mailto:emailkamu@gmail.com" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-200">
+      Kirim Email
+    </a>
+  </section>
+
   <!-- FOOTER -->
-  <footer class="text-center py-6 bg-gray-200 mt-10">
-    <p>© 2025 Landing Page by Lo</p>
+  <footer class="text-center py-6 bg-gray-200">
+    <p>© 2025 Portofolio by Lo</p>
   </footer>
 
 </body>
