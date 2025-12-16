@@ -3,11 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page Pertama</title>
-  <link rel="stylesheet" href="style/style.css" />
+  <title>Landing Page Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Selamat Datang di Web Gue!</h1>
-  <p>Ini landing page pertama gue, siap dijual!</p>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- HERO -->
+  <section class="text-center py-20 bg-blue-600 text-white">
+    <h1 class="text-5xl font-bold mb-4">Selamat Datang di Web Gue!</h1>
+    <p class="text-lg mb-6">Landing page pertama gue versi Tailwind, lebih modern dan siap dijual!</p>
+    <a href="#fitur" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-200">
+      Lihat Fitur
+    </a>
+  </section>
+
+  <!-- FITUR -->
+  <section id="fitur" class="py-16 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Kenapa Harus Pilih Ini?</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Cepat</h3>
+        <p>Landing page ringan dan loading super cepat.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Modern</h3>
+        <p>Desain clean dan responsif otomatis.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h3 class="text-xl font-semibold mb-2">Siap Jual</h3>
+        <p>Bisa langsung lo upload ke marketplace.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 bg-gray-200 mt-10">
+    <p>© 2025 Landing Page by Lo</p>
+  </footer>
+
 </body>
 </html>
