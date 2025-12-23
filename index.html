@@ -5,45 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio Mohammad Saif Al-Islam</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #parallax-wrap img { transition: transform 0.06s linear; }
+  </style>
 </head>
 
 <body class="bg-gray-100 text-gray-800">
 
-  <!-- HERO -->
-  <section class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
-      
-      <!-- FOTO -->
-      <div class="flex-shrink-0">
-        <div class="w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-xl border-4 border-blue-500/60">
-          <img
-            src="hero-saif.JPG"
-            alt="Foto Mohammad Saif Al-Islam"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
+  <!-- HERO MULTI-LAYER PARALLAX -->
+  <section class="relative overflow-hidden bg-white h-[100vh] flex items-center justify-center">
+    <div class="absolute inset-0 z-0 pointer-events-none" id="parallax-wrap">
+      <img src="assets/outdoor.jpeg" alt="Outdoor"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95vw] max-w-6xl rounded-xl shadow-xl will-change-transform opacity-80"
+        data-depth="0.05" />
+      <img src="assets/ldks.jpeg" alt="LDKS"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] max-w-4xl rounded-xl shadow-xl will-change-transform"
+        data-depth="0.12" />
+      <img src="assets/kabah.jpeg" alt="Ka'bah"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] max-w-3xl rounded-xl shadow-xl will-change-transform"
+        data-depth="0.18" />
+      <img src="assets/jabalrahmah.jpeg" alt="Jabal Rahmah"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] max-w-2xl rounded-xl shadow-xl will-change-transform"
+        data-depth="0.25" />
+      <img src="assets/hero-saif.JPG" alt="Hero Saif"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] max-w-xl rounded-xl shadow-xl will-change-transform"
+        data-depth="0.3" />
+    </div>
 
-      <!-- TEKS -->
-      <div class="text-center md:text-left">
-        <h1 class="text-3xl md:text-4xl font-bold mb-2">
-          Mohammad Saif Al-Islam
-        </h1>
-        <p class="text-base md:text-lg text-gray-600 mb-4">
-          Mahasiswa Teknik Informatika – Universitas Mercu Buana
-        </p>
-        <p class="text-gray-700 mb-6">
-          Gue mulai belajar web development ketika masuk kuliah, setelah sebelumnya fokus di tahfidz dan tahsin saat di pesantren.
-          Sekarang gue lagi ngejar ketertinggalan, pelan-pelan belajar bikin website modern dan responsif.
-        </p>
-        <a
-          href="#projects"
-          class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-blue-700 transition"
-        >
-          Lihat Project
-        </a>
-      </div>
-
+    <div class="z-10 text-center px-6">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Mohammad Saif Al-Islam</h1>
+      <p class="text-base md:text-lg text-gray-600 mb-4">Mahasiswa Teknik Informatika – Universitas Mercu Buana</p>
+      <p class="text-gray-700 mb-6 max-w-xl mx-auto">
+        Dari pesantren ke TI, dari Ka'bah ke gunung, dari LDKS ke pentas seni. Portofolio hidup yang terus berkembang.
+      </p>
+      <a href="#projects" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-blue-700 transition">
+        Lihat Project
+      </a>
     </div>
   </section>
 
@@ -63,166 +60,64 @@
   <!-- TIMELINE -->
   <section class="max-w-4xl mx-auto py-16 px-6">
     <h2 class="text-3xl font-bold mb-10 text-center">Perjalanan Gue</h2>
-
     <div class="space-y-8 border-l-4 border-blue-600 pl-6">
-
       <div>
         <h3 class="text-xl font-semibold">2017 – 2023</h3>
         <p class="text-gray-700">Belajar di pesantren, fokus di tahfidz dan tahsin. Akses ke teknologi terbatas, tapi mental disiplin kebentuk di sini.</p>
       </div>
-
       <div>
         <h3 class="text-xl font-semibold">2024</h3>
         <p class="text-gray-700">Masuk Teknik Informatika Universitas Mercu Buana. Mulai kenal dunia teknologi dan web development.</p>
       </div>
-
       <div>
         <h3 class="text-xl font-semibold">2024 – Sekarang</h3>
         <p class="text-gray-700">Belajar HTML, CSS, Tailwind, GitHub Pages, dan bikin landing page pertama. Pelan-pelan ngejar ketertinggalan.</p>
       </div>
-
     </div>
   </section>
 
   <!-- SKILLS -->
   <section class="py-16 bg-gray-100">
     <h2 class="text-3xl font-bold text-center mb-10">Skill yang Lagi Gue Kuasai</h2>
-
     <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6 px-6">
-
       <div class="bg-white p-6 rounded-xl shadow text-center">
         <h3 class="font-semibold text-xl mb-2">HTML</h3>
         <p class="text-gray-600">Dasar struktur website, fondasi utama gue belajar web dev.</p>
       </div>
-
       <div class="bg-white p-6 rounded-xl shadow text-center">
         <h3 class="font-semibold text-xl mb-2">Tailwind CSS</h3>
         <p class="text-gray-600">Bikin tampilan modern, cepat, dan responsif.</p>
       </div>
-
       <div class="bg-white p-6 rounded-xl shadow text-center">
         <h3 class="font-semibold text-xl mb-2">GitHub Pages</h3>
         <p class="text-gray-600">Deploy website statis dengan mudah dan gratis.</p>
       </div>
-
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="py-16">
     <h2 class="text-3xl font-bold text-center mb-10">Project Gue</h2>
-
     <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 px-6">
-
       <a href="https://sayf-cell.github.io/landing-page-pertama/" target="_blank" class="block bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
         <h3 class="text-xl font-semibold mb-2">Landing Page Pertama</h3>
         <p class="text-gray-600">Project pertama gue pakai Tailwind CSS.</p>
       </a>
-
       <div class="bg-white p-5 rounded-xl shadow text-gray-400">
         <h3 class="text-xl font-semibold mb-2">Project 2</h3>
         <p>Coming soon...</p>
       </div>
-
       <div class="bg-white p-5 rounded-xl shadow text-gray-400">
         <h3 class="text-xl font-semibold mb-2">Project 3</h3>
         <p>Coming soon...</p>
       </div>
-
     </div>
   </section>
 
-<!-- CONTACT -->
-<section class="py-16 bg-blue-600 text-white text-center">
-  <h2 class="text-3xl font-bold mb-4">Hubungi Gue</h2>
-  <p class="mb-6">Kalau mau ngobrol soal project atau belajar bareng, langsung hubungi aja.</p>
-
-  <div class="flex flex-col md:flex-row justify-center gap-4 flex-wrap">
-
-    <!-- EMAIL -->
-    <a href="mailto:sayfelhafez@gmail.com"
-      class="flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition
-             bg-white text-blue-600 shadow-lg hover:shadow-[0_0_25px_#ffffff] hover:scale-105 hover:-translate-y-1 duration-300">
-
-      <!-- ICON EMAIL -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M16 12l-4 4m0 0l-4-4m4 4V8" />
-      </svg>
-
-      Email
-    </a>
-
-    <!-- WHATSAPP -->
-    <a href="https://wa.me/6282125427877"
-      class="flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition
-             bg-green-500 text-white shadow-lg hover:shadow-[0_0_25px_#22c55e] hover:scale-105 hover:-translate-y-1 duration-300">
-
-      <!-- ICON WHATSAPP -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path
-          d="M20.52 3.48A11.8 11.8 0 0012 0a11.94 11.94 0 00-10.3 17.94L0 24l6.3-1.65A11.94 11.94 0 0012 24a11.94 11.94 0 0011.94-11.94 11.8 11.8 0 00-3.42-8.58zM12 21.6a9.6 9.6 0 01-4.92-1.35l-.36-.21-3.72.96.99-3.63-.24-.39A9.6 9.6 0 1121.6 12 9.63 9.63 0 0112 21.6zm5.28-7.2c-.3-.15-1.77-.87-2.04-.96s-.48-.15-.69.15-.78.96-.96 1.17-.36.21-.66.06a7.83 7.83 0 01-2.31-1.41 8.7 8.7 0 01-1.62-2.04c-.18-.3 0-.45.12-.6s.3-.36.45-.54.24-.3.36-.48a.52.52 0 000-.51c-.06-.15-.69-1.65-.96-2.28s-.51-.51-.69-.51h-.6a1.17 1.17 0 00-.84.39 3.53 3.53 0 00-1.11 2.61 6.15 6.15 0 001.29 3.24 14.07 14.07 0 005.4 4.5 18.36 18.36 0 002.19.81 5.25 5.25 0 002.4.15 3 3 0 002.01-1.41 2.46 2.46 0 00.18-1.41c-.09-.15-.27-.24-.57-.39z" />
-      </svg>
-
-      WhatsApp
-    </a>
-
-    <!-- INSTAGRAM -->
-    <a href="https://instagram.com/muh.sayf"
-      class="flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition
-             bg-pink-500 text-white shadow-lg hover:shadow-[0_0_25px_#ec4899] hover:scale-105 hover:-translate-y-1 duration-300">
-
-      <!-- ICON IG -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path
-          d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z" />
-      </svg>
-
-      Instagram
-    </a>
-
-    <!-- TIKTOK -->
-    <a href="https://www.tiktok.com/@muh_sayf"
-      class="flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition
-             bg-black text-white shadow-lg hover:shadow-[0_0_25px_#ffffff] hover:scale-105 hover:-translate-y-1 duration-300">
-
-      <!-- ICON TIKTOK -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path
-          d="M12.5 2c.3 2.1 1.8 3.8 3.8 4.3v3.2c-1.4-.1-2.7-.5-3.8-1.2v6.7c0 2.9-2.4 5.2-5.2 5.2S2 17.9 2 15s2.4-5.2 5.2-5.2c.5 0 1 .1 1.5.2v3.3c-.4-.2-.9-.3-1.5-.3-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V2h3.3z" />
-      </svg>
-
-      TikTok
-    </a>
-
-  </div>
-</section>
-
-  <!-- FOOTER -->
-  <footer class="text-center py-6 bg-gray-200 mt-8">
-    <p>© 2025 Mohammad Saif Al-Islam</p>
-  </footer>
-
-  <!-- ANIMASI -->
-  <script>
-    const elements = document.querySelectorAll("section, .shadow");
-
-    elements.forEach((el) => {
-      el.style.opacity = 0;
-      el.style.transform = "translateY(20px)";
-      el.style.transition = "all 0.7s ease";
-    });
-
-    window.addEventListener("scroll", () => {
-      elements.forEach((el) => {
-        const rect = el.getBoundingClientRect().top;
-        if (rect < window.innerHeight - 100) {
-          el.style.opacity = 1;
-          el.style.transform = "translateY(0)";
-        }
-      });
-    });
-  </script>
-
-</body>
-</html>
+  <!-- CONTACT -->
+  <section class="py-16 bg-blue-600 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Hubungi Gue</h2>
+    <p class="mb-6">Kalau mau ngobrol soal project atau belajar bareng, langsung hubungi aja.</p>
+    <div class="flex flex-col md:flex-row justify-center gap-4 flex-wrap">
+      <a href="mailto:sayfelhafez@gmail.com" class="flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition bg-white text-blue-600 shadow-lg hover:scale-105 hover:-translate-y-1 duration-300">Email</a>
+      <a href="https://wa.me/6282125427877" class="flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition bg-green-500 text-white shadow-lg hover:scale-105 hover:-translate-y
