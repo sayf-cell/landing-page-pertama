@@ -10,26 +10,34 @@
   </style>
 </head>
 
+<script>
+  document.addEventListener("mousemove", function (e) {
+    const layers = document.querySelectorAll("#parallax-wrap img");
+    layers.forEach((layer) => {
+      const depth = layer.getAttribute("data-depth");
+      const x = (window.innerWidth - e.pageX * depth) / 100;
+      const y = (window.innerHeight - e.pageY * depth) / 100;
+      layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+  });
+</script>
+
+
 <body class="bg-gray-100 text-gray-800">
 
   <!-- HERO MULTI-LAYER PARALLAX -->
   <section class="relative overflow-hidden bg-white h-[100vh] flex items-center justify-center">
     <div class="absolute inset-0 z-0 pointer-events-none" id="parallax-wrap">
-      <img src="assets/outdoor.jpeg" alt="Outdoor"
-        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95vw] max-w-6xl rounded-xl shadow-xl will-change-transform opacity-80"
-        data-depth="0.05" />
-      <img src="assets/ldks.jpeg" alt="LDKS"
-        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] max-w-4xl rounded-xl shadow-xl will-change-transform"
-        data-depth="0.12" />
-      <img src="assets/kabah.jpeg" alt="Ka'bah"
-        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] max-w-3xl rounded-xl shadow-xl will-change-transform"
-        data-depth="0.18" />
-      <img src="assets/jabalrahmah.jpeg" alt="Jabal Rahmah"
-        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] max-w-2xl rounded-xl shadow-xl will-change-transform"
-        data-depth="0.25" />
-      <img src="assets/hero-saif.JPG" alt="Hero Saif"
-        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] max-w-xl rounded-xl shadow-xl will-change-transform"
-        data-depth="0.3" />
+      <img src="assets/outdoor.jpeg" data-depth="0.05"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95vw] max-w-6xl rounded-xl shadow-xl opacity-80" />
+      <img src="assets/ldks.jpeg" data-depth="0.12"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] max-w-4xl rounded-xl shadow-xl" />
+      <img src="assets/kabah.jpeg" data-depth="0.18"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] max-w-3xl rounded-xl shadow-xl" />
+      <img src="assets/jabalrahmah.jpeg" data-depth="0.25"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] max-w-2xl rounded-xl shadow-xl" />
+      <img src="assets/hero-saif.JPG" data-depth="0.3"
+        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] max-w-xl rounded-xl shadow-xl" />
     </div>
 
     <div class="z-10 text-center px-6">
@@ -118,36 +126,14 @@
 <section class="py-16 bg-blue-600 text-white text-center">
   <h2 class="text-3xl font-bold mb-4">Hubungi Gue</h2>
   <p class="mb-6">Kalau mau ngobrol soal project atau belajar bareng, langsung hubungi aja.</p>
-
   <div class="flex flex-col md:flex-row justify-center gap-4 flex-wrap">
-
-    <!-- EMAIL -->
     <a href="mailto:sayfelhafez@gmail.com"
-      class="flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition
-             bg-white text-blue-600 shadow-lg hover:scale-105 hover:-translate-y-1 duration-300">
-      Email
-    </a>
-
-    <!-- WHATSAPP -->
+       class="px-6 py-3 rounded-full font-semibold transition bg-white text-blue-600 shadow-lg hover:scale-105 hover:-translate-y-1 duration-300">Email</a>
     <a href="https://wa.me/6282125427877"
-      class="flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition
-             bg-green-500 text-white shadow-lg hover:scale-105 hover:-translate-y-1 duration-300">
-      WhatsApp
-    </a>
-
-    <!-- INSTAGRAM -->
+       class="px-6 py-3 rounded-full font-semibold transition bg-green-500 text-white shadow-lg hover:scale-105 hover:-translate-y-1 duration-300">WhatsApp</a>
     <a href="https://instagram.com/muh.sayf"
-      class="flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition
-             bg-pink-500 text-white shadow-lg hover:scale-105 hover:-translate-y-1 duration-300">
-      Instagram
-    </a>
-
-    <!-- TIKTOK -->
+       class="px-6 py-3 rounded-full font-semibold transition bg-pink-500 text-white shadow-lg hover:scale-105 hover:-translate-y-1 duration-300">Instagram</a>
     <a href="https://www.tiktok.com/@muh_sayf"
-      class="flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition
-             bg-black text-white shadow-lg hover:scale-105 hover:-translate-y-1 duration-300">
-      TikTok
-    </a>
-
+       class="px-6 py-3 rounded-full font-semibold transition bg-black text-white shadow-lg hover:scale-105 hover:-translate-y-1 duration-300">TikTok</a>
   </div>
 </section>
